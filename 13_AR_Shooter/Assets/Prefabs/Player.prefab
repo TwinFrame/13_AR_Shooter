@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3686551306031821282}
   - component: {fileID: 3686551306031821283}
+  - component: {fileID: 8524614659927049456}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -44,6 +45,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f879aa8621b596449900e493ffc42c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!81 &8524614659927049456
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3686551306031821212}
+  m_Enabled: 1
 --- !u!1001 &4066500595257491561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51,6 +60,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3686551306031821282}
     m_Modifications:
+    - target: {fileID: -6672637250699319784, guid: 90422945708b2e843a30c3f8d8a0d598, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8b85dbb2dda7033498a3f3e3ca3121ed, type: 3}
+    - target: {fileID: -6672637250699319784, guid: 90422945708b2e843a30c3f8d8a0d598, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 341379745123477839, guid: 90422945708b2e843a30c3f8d8a0d598, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0

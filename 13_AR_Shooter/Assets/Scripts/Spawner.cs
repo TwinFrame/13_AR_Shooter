@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
+
 public class Spawner : MonoBehaviour
 {
 	[SerializeField] private Player _target;
@@ -9,12 +11,19 @@ public class Spawner : MonoBehaviour
 	[SerializeField] private float _secondsBetweenSpawn;
 	[SerializeField] private Enemy[] _enemies;
 	[SerializeField] private Transform _container;
+	[Header("Audio Clip")]
+	[SerializeField] private AudioClip _die;
+	[SerializeField] private AudioClip _create;
+
+	private AudioSource _audio;
 
 	private WaitForSeconds _waitForSeconds;
 
 	private void Start()
 	{
 		_waitForSeconds = new WaitForSeconds(_secondsBetweenSpawn);
+
+		_audio = GetComponent<AudioSource>();
 
 		StartCoroutine(SpawnRandomEnemy());
 	}
@@ -45,6 +54,9 @@ public class Spawner : MonoBehaviour
 		enemy.Dying -= OnEmenyDying;
 
 		_target.AddScore();
+
+		_audio.pitch = Random.Range(0.8f, 1.2f);
+		_audio.PlayOneShot(_die);
 	}
 
 	public void ResetEnemy()

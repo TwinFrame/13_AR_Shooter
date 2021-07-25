@@ -241,7 +241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2918681187624126947}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.7763568e-17, y: 0, z: 0}
+  m_LocalPosition: {x: 1.7763568e-17, y: -0.847, z: 0}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
   m_Children:
   - {fileID: 710812765597924928}
@@ -558,7 +558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184f8f934213d2c4abc3114f7840eb18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _deathEffect: {fileID: 9179128537497561454, guid: c1fb2566883ad104aa26945304cfefe2, type: 3}
+  _deathEffect: {fileID: 2734743600120649215, guid: 3e77466040b1a6e48ae022dbb0641799, type: 3}
 --- !u!136 &1816354575674567871
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -570,9 +570,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.34389794
-  m_Height: 1.685354
+  m_Height: 1.685564
   m_Direction: 1
-  m_Center: {x: 0.0098798275, y: 0.8216567, z: 0}
+  m_Center: {x: 0.0098798275, y: -0.02128148, z: 0}
 --- !u!95 &6295771073321040257
 Animator:
   serializedVersion: 3
